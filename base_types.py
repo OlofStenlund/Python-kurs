@@ -45,11 +45,13 @@ print(Int2 * boolean2) # = 10*0
 # No operations can be made with none.
 
 floater = 1.0 # "Floater" is a float data type
-result = int(floater) # Convert to integer
+result = int(floater) # Convert to integer (casting)
 print(type(result)) # Print type
 
 stringer1 = "3"
 resultagain = int(stringer1)
 print(type(resultagain)) # Converted to integer
 
-print(resultagain + Int2)
+print(resultagain + Int2) # =3+10
+
+# Can also convert to bool, resulting in a value of 1 or 0
