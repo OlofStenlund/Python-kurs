@@ -60,11 +60,11 @@ Olof = {
     },
 }
 
-for key in Olof.keys():
+for key in Olof.keys(): # Prints keys
     print(key)
 
-for values in Olof.values():
+for values in Olof.values(): # Prints values
         print(values)
 
-for key, values in Olof.items():
+for key, values in Olof.items(): # Prints key values pairs
     print(key, values)
