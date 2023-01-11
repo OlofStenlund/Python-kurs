@@ -54,6 +54,6 @@ my_name = "".join(letter_list) #C reates a str and performs join on that str
 print(my_name)
 
 letter_list_2 = ["o", "l", "o", "f"]
-my_name_2 = "Jag heter ".join(letter_list_2)
+my_name_2 = "Jag heter ".join(letter_list_2) # Joins the list elements with the text string each time.
 print(my_name_2)
 

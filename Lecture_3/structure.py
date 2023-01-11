@@ -2,6 +2,7 @@
 import random
 
 # Global variables
+
 points = 0
 
 # Functions
@@ -18,7 +19,7 @@ def function_1():
     print(blabla)
     # Returns
     return blabla
-
+# Look at how to deal with global
  
 
 main()

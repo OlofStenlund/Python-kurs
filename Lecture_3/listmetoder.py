@@ -91,7 +91,21 @@ def a_function_that_returns_an_int():
 print(type(a_function_that_returns_an_int())) #Returns int, youre asking for the result of the function
 
 def a_function_that_returns_a_list(a, b, c):
-    return [a, b, c]
+    return [a, b, c] # Return does not print, so no result is shown
 
-listan = a_function_that_returns_a_list(1, 2, 3)
+listan = a_function_that_returns_a_list(1, 2, 3) # Save the return values in a variable
 print(listan)
+
+# When calling the function, the answer from the function is what is returned
+
+# Functions are objects so they can be used as arguments when calling functions
+def func1(): # Func1 prints "func1"
+    print("func1")
+
+def func2(a):
+    a() # = func1()
+
+func2(func1) # Because a = func1, this will be func1() witch will run func1
+
+# Everything is objects in python
+
