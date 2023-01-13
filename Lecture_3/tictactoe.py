@@ -1,10 +1,12 @@
-# Desifn of the board
+# Design of the board
 row_divider = ['-------------']
 row1 = ["|", " ", "|", " ", "|", " ", "|"]
 row2 = ["|", " ", "|", " ", "|", " ", "|"]
 row3 = ["|", " ", "|", " ", "|", " ", "|"]
+
 # Playable rows as a list of lists
 row_group = [row1, row2, row3]
+
 # Entire board
 board = [row_divider, row1, row_divider, row2, row_divider, row3, row_divider]
 
@@ -70,14 +72,13 @@ def modify_board(mark_row: int, mark_place: int, player: str): # when running th
     elif mark_place == 3:
         index_place = mark_place+2
     if mark_row == 1:
-        row1[index_place] = player # Make a third argument that takes in 'X' or 'O' depending on player. Have the loop run 1 for each player, this way we can reuse the function
+        row1[index_place] = player 
     elif mark_row == 2:
         row2[index_place] = player
     elif mark_row == 3:
         row3[index_place] = player
 
 def validate_placement(inp): # returns poistions mark_row, mark_place
-    #print(f"row {inp[0]} and place {inp[1]}")
     in_0 = inp[0]
     in_1 = 1
     if inp[1] == 2:
@@ -140,11 +141,8 @@ def check_winner(player):
     place3 = 0
     for i in row_group: # checks every index per row. Make it only check one index?
         place1 += i[1:2].count(player)
-        # print(f"counted", place1)
-        place2 += i[3:4].count(player)
-        # print(f"counted", place2)        
+        place2 += i[3:4].count(player)     
         place3 += i[5:6].count(player)
-        # print(f"counted", place3)
         if place1 == 3 or place2 == 3 or place3 == 3:
             return True
         else:
