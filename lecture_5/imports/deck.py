@@ -1,5 +1,5 @@
 from typing import List
-from imports.card import Card, CardSuit, CardValue
+from card import Card, CardSuit, CardValue
 
 class Deck:
     cards: List[Card] = []

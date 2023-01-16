@@ -1,4 +1,4 @@
-from imports.deck import Deck
+from deck import Deck
 
 def main():
     deck = Deck()
