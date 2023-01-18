@@ -63,7 +63,8 @@ OlofSpy = Person_spy("Olof", 30, "Locust")
 
 
 
-### Static methods
+#-------------Static methods--------------------
+
 # Methods that don't change the class?
 
 class Person_spy_boss:
@@ -99,9 +100,9 @@ res = Calculator.add(3, 5)
 #print(res)
 
 
-### Dataklasser
+#--------------Dataklasser----------------
 
-@dataclass # must be imported from library dataclasses. Is a decorator for a class
+#@dataclass # must be imported from library dataclasses. Is a decorator for a class
 # Init not needed, automatically created. also __repr__, whatever that is
 # Dataclasses can take arguments as well
 class Animal:

@@ -20,7 +20,7 @@ animal1 = AnimalInCaptivity("woof")
 #print(type(animal1)) #<- returns <class '__main__'.AnimalInCaptivity. __main__refers to the whole file?
 # If you import a class from another file (say, 'file_2') it will say 'file2.animal' instead.
 
-#print(AnimalInCaptivity.sound)
+print(AnimalInCaptivity.sound)
 
 class Person:
     sound: str = "Gnyr"
