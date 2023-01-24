@@ -6,6 +6,7 @@ from typing import List, Tuple
 
 
 class Animals:
+    """Whatever is in here can be accessed with the use of help(Animals)"""
     sound: str
     
     def __init__(self, sound: str):
@@ -177,3 +178,4 @@ print(g8.apps[0]) # Return only the first item, index 0
 # class NokiaPhone(SmartPhone): # Inherits from smartphone, which inherits from phone.
 #     # Init is run in smartphone, which (thanks to super()) runs init in super-class as well
 #     pass
+

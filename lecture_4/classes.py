@@ -12,6 +12,9 @@ class AnimalInCaptivity:
         print( "I say " + self.sound)
 
 
+# self.sound = sound -> self= the object, .sound = the field or value within the class, = sound = the value being sent into the class, argument
+# what comes after the = is the input value
+
 class AnimalInTheWild:
     pass
 
@@ -37,7 +40,7 @@ dog = AnimalInCaptivity("bjäbb")
 
 class AnimalInCaptivity:
     sound: str ="Growl" 
-    def __init__(self, sound: str): # self is the object(dog)m sound is the second argument
+    def __init__(self, sound: str): # self is the object(dog) sound is the second argument
         self.sound = sound # dog.sound = sound (sound being the string value used as argument when definin dog ("woof")
 
 

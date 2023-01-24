@@ -1,6 +1,7 @@
 # Can I get the class and functions into a separate file please?
 # Would be nice to be able to import them
 # from class_calculator import Calculator
+
 class Calculator:
 
     @staticmethod

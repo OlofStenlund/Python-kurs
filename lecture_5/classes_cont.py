@@ -1,5 +1,9 @@
 from dataclasses import dataclass
 
+
+# Self refers to the object being created
+# self.name in case of object1 means object1.name
+# ie, the name variable of object1
 class Person:
     def __init__(self, name: str, age: int, spy_name: str):
         self.name = name
