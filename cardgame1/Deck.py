@@ -3,6 +3,7 @@
 from typing import List
 from Cards import CardSuit, CardValue
 from random import shuffle
+from dataclasses import dataclass
 
 
 class Card:
@@ -34,6 +35,28 @@ class Deck:
 
     def shuffle_deck(self):
         shuffle(self.cards)
+
+        
+
+class HalfDeck:
+    cards: List[Card] = []
+
+    def __init__(self, cards):
+        self.cards = cards
+
+    def shuffle_deck(self):
+        shuffle(self.cards)
+
+    def pull_card(self):
+        return self.cards.pop()
+
+    def append_card(self, x):
+        self.cards.append(x)
+    
+    def insert_card(self, x, y):
+        self.cards.insert(x, y)
+
+
 
 
 # when main is run, we create an objcet called "deck" that is of the class Deck

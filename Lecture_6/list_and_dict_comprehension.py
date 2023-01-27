@@ -26,4 +26,4 @@ print(names, ages)
 my_people = {person["name"]: person["age"] for person in people}
 print(my_people)
 
-letters = [letter for name in names in names for letter in name]
+# letters = [letter for name in names in names for letter in name]
