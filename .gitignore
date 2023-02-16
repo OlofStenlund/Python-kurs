@@ -1,0 +1,9 @@
+Final_Assignment/
+*.swp
+*.lock
+env_venv/
+env_pipenv/
+__pycache__
+Lib/
+Scripts/
+pyvenv.cfg

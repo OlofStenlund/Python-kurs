@@ -1,5 +1,6 @@
 from typing import List, Tuple
 from enum import Enum
+from bs4 import BeautifulSoup
 
 class Test1(Enum):
     Fuck = 1

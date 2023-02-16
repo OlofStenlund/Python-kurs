@@ -3,8 +3,9 @@ import sqlite3
 # connection is a variable
 # if no database exists, sqllite will create one
 connection = sqlite3.connect("test.db")
-# Creates a database IN  THE FOLDER WHICH YOU ARE IN IN THE TERMINAL
+# Creates a database IN THE FOLDER WHICH YOU ARE IN IN THE TERMINAL
 # If the database exists, it will not create one but connect to it.
+# Will it only connect if it's in the same folder?
 
 # Install extension sqllite viewer
 
@@ -38,10 +39,10 @@ cursor.execute(person_insert)
 # Drop table:
 cursor.execute("DROP TABLE test2")
 cursor.execute("DROP TABLE test3")
-l
+
 
 res = cursor.execute("SELECT name FROM test")
-# res is cursor object. What does that mean? It has functions?
+# res is cursor object, menaing we can use res.fetchall() etc.
 data = res.fetchone() # Fetchone "returns the first as an iterator, then if I call it again, the next object that fits"
 # In the above example, we selected name from "master" (all?) and iot will fetch the first result. Next time we run it will fetch the second.
 print(data)
@@ -54,7 +55,14 @@ print(data)
 alldata = res.fetchall() # Fetches all that has not been fetched yet?
 # print(alldata)
 
-# Close the connection before exiting
+
+
+
+
+
+# Committhe changes
 connection.commit()
+
+# Close the connection before exiting
 cursor.close()
 connection.close()

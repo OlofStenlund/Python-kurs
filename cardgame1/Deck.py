@@ -58,6 +58,24 @@ class HalfDeck:
 
 
 
+class MemoryDeck():
+    cards: List[Card] = []
+
+    def __init__ (self, x):
+        for suit in CardSuit.CLUBS.value:
+            for value in CardValue:
+                if value.value <= x:
+                    self.cards.append(Card(suit, value))
+                    self.cards.append(Card(suit, value))
+        return x
+    def choose_card(self, number):
+        num = number-1
+        return self.cards[num]
+
+    def shuffle_deck(self):
+        shuffle(self.cards)
+       
+
 
 # when main is run, we create an objcet called "deck" that is of the class Deck
 # An object of class Deck contains a list of objects och class Card.
